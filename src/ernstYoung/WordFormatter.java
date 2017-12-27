@@ -37,12 +37,12 @@ public class WordFormatter {
 
             bufferLine = new char[lineMaxWidth];
             flag = false;
-            int dif = lineMaxWidth - linesArray[i].length();
+            int dif = lineMaxWidth - linesArray[i].length(); //number of 'spaces' in that line
             int j = 0;
             int k = bufferLine.length - 1;
 
 
-            while (dif != 0) {
+            while (dif != 0) { //will insert into array ' ' alternately into the beguining and end of the array
 
                 if (flag) {
                     bufferLine[j] = ' ';
@@ -56,7 +56,7 @@ public class WordFormatter {
                 dif--;
             }
 
-            for (int l = 0; l <= k - j; l++) {
+            for (int l = 0; l <= k - j; l++) { //insert the info in betweem the 'spaces'
 
                 bufferLine[l + j] = linesArray[i].charAt(l);
             }
