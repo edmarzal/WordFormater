@@ -1,4 +1,4 @@
-package ernstYoung;
+package wordsformating;
 
 public class WordFormatter {
 
